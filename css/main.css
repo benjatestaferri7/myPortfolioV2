@@ -465,5 +465,48 @@ header .navbar ul li a.active::before{
 /**CloseAboutSection**/
 
 /**MessageText**/
-
+.messageText{
+  background-color: #0c0c17;
+  padding: 40px 15px;
+}
+.messageText .text{
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
+}
+.messageText .text h2{
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 35px;
+}
+.messageText .button{
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  text-align: right; 
+}
+.messageText .button a{
+  border-radius: 5px;
+  color: #ffffff;
+  border: 2px solid #eeeeee;
+  padding: 13px 30px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all .5s ease;
+  background-color: transparent;
+}
+.messageText .button a:hover{
+  background-color: #ffffff;
+  color: #000000;
+}
 /**CloseMessageText**/
+
+
+/**ServiceSection**/
+
+
+
+/**CloseServiceStection**/
