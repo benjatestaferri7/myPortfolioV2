@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:300,400,500,600,700,900&display=swap');
-@import url('https://stackpath.bootsrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 *
 {
@@ -652,3 +650,130 @@ header .navbar ul li a.active::before{
 /**CloseSkillsSection**/
 
 /**SliderFromHere**/
+.slideHome{
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.slideHome .slides{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  display: none;
+  padding: 15px;
+  animation: slide 2.5s ease;
+}
+.slideHome .slides.active{
+  display: flex;
+}
+@keyframes slides{
+  0%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1.1);
+  }
+}
+.container{
+  max-width: 1140px;
+  margin: auto;
+}
+.slideHome .container{
+  flex-grow: 1;
+}
+.slideHome .caption{
+  width: 50%;
+}
+.slideHome .caption h1{
+  font-size: 40px;
+  color: #000000;
+  margin: 0;
+}
+.slideHome .slides.active .caption h1{
+  opacity: 0;
+  animation: captionText .5s ease forwards;
+  animation-delay: 1s;
+}
+.slideHome .caption p{
+  font-size: 20px;
+  margin: 15px 0 30px;
+  color: #000000;
+}
+.slideHome .slides.active .caption p{
+  opacity: 0;
+  animation: captionText .5s ease forwards;
+  animation-delay: 1.2s;
+}
+@keyframes captionText{
+  0%{
+    opacity: 0;
+    transform: translate(-100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+.slideHome .controls .preview,
+.slideHome .controls .next{
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  margin-top: -20px;
+  color: #ffffff;
+  background-color: #0072C6;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+.slideHome .controls .preview:hover,
+.slideHome .controls .next:hover{
+  background-color: #000000;
+}
+.slideHome .controls .preview{
+  left: 0;
+}
+.slideHome .controls .next{
+  right: 0;
+}
+.slideHome .indicator{
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  z-index: 2;
+  transform: translateX(-50px);
+  cursor: pointer;
+}
+.slideHome .indicator div{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+  background-color: #0072C6;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 25px;
+  margin: 0 3px;
+}
+.slideHome .indicator div.active{
+  background-color: #000000;
+}
+/**Responsive Slider Section**/
+@media(max-width:768px){
+  .controls{
+    display: none;
+  }
+}
+
+
+
+/**End Responsive Slider Section**/
