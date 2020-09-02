@@ -582,5 +582,73 @@ header .navbar ul li a.active::before{
 /**CloseServiceStection**/
 
 /**SkillsSection**/
-
+.skills{
+  padding: 100px 15px;
+  color: #ffffff;
+}
+.skills .skillsContent{
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-right: 40px;
+}
+.skills .image{
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.alignItemsCenter{
+  align-items: center;
+}
+.skills .image img{
+  width: 100%;
+  display: block;
+}
+.skills .skillsContent .sectionTitle p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #838383;
+  margin: 15px 0 0;
+} 
+.skills .skillsContent .skillsBox{
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+.skills .skillsContent .skillsBox h6{
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  margin: 0 0 8px;
+  cursor: grab;
+}
+.skills .skillsContent .skillsBox h6:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.skills .skillsContent .skillsBox .skillsBar{
+  height: 16px;
+  border-radius: 10px;
+  background-color: #eeeeee;
+  position: relative;
+}
+.skills .skillsContent .skillsBox .skillsBar .skillsIntheBar{
+  background-color: #0072C6;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  cursor: pointer;
+}
+.skills .skillsContent .skillsBox .skillsBar .skillsIntheBar span{
+  color: #838383;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  right: 0;
+  top: -30px;
+  cursor: pointer;
+}
 /**CloseSkillsSection**/
+
+/**SliderFromHere**/
