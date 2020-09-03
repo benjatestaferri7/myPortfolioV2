@@ -649,3 +649,144 @@ header .navbar ul li a.active::before{
 }
 /**CloseSkillsSection**/
 
+/**MyPortfolio**/
+.portfolio{
+  background-color: #f5f8fd;
+  padding: 100px 7px;
+}
+.portfolio .filterButtons{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.portfolio .filterButtons ul{
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+.portfolio .filterButtons ul li{
+  color: #000000;
+  font-weight: 500;
+  font-size: 16px;
+  display: inline-block;
+  margin: 0 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding-bottom: 0;
+}
+.portfolio .filterButtons ul li.active{
+  color: #0072C6;
+  border-bottom: 2px solid #0072C6;
+}
+.portfolio .filterButtons{
+  margin-bottom: 25px;
+}
+.portfolio .portfolioGallery{
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio .portfolioGallery .item{
+  flex: 0 0 33.3%;
+  max-width: 33.33%;
+  position: relative;
+  padding: 8px;
+}
+.portfolio .portfolioGallery .item .inner{
+  position: relative;
+}
+.portfolio .portfolioGallery .item img{
+  width: 100%;
+  display: block;
+}
+.portfolio .portfolioGallery .item .overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all .5s ease;
+}
+.portfolio .portfolioGallery .item:hover .overlay{
+  opacity: 1;
+}
+.portfolio .portfolioGallery .item .overlay .fa{
+  height: 50px;
+  width: 50px;
+  background-color: #0072C6;
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.portfolio .portfolioGallery .item:hover .overlay .fa{
+  -webkit-animation: galleryIcon .8s ease;
+  animation: galleryIcon .8s ease;
+}
+
+@keyframes galleryText{
+  0%{
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/**Lightbox**/
+.lightbox{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+.lightbox.show{
+  display: flex;
+}
+.lightbox.hide{
+  display: none;
+}
+.lightbox .closeLightbox{
+  height: 35px;
+  width: 35px;
+  background-color: #ffffff;
+  color: #0072C6;
+  text-align: center;
+  line-height: 35px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  border-radius: 50px;
+  z-index: 101;
+}
+.lightbox img{
+  max-width: 90%;
+  max-height: 80%;
+  display: block;
+}
+
+
+
+/**CloseLightbox**/
+
+
+
+/**ClosePortfolio**/
