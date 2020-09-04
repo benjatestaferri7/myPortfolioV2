@@ -396,12 +396,80 @@
     </div>
   </div>
 </section>
-
-
-
 <!--EndTestimonialSection-->
 
 
+<!--contactBtn-->
+    <section id="contactBTN">
+        <!--heading-->
+        <h1 class="cbHeading">If You Have Any Project In Your Mind ?</h1>
+        <!--btn-->
+        <a href="#contactForm"> Contact Me</a>
+    </section>
+    <!--contactForm-->
+
+  <!--ContactSection-->
+    <section id="contactForm">
+        <form action="contact.php" method="post">
+            <!--left-->
+            <div class="contactLeft">
+                <!--heading-->
+                <h1 class="clHeading"><font style="border-bottom: 3px solid #057ace;"> Writ</font>e Us</h1>
+                <!--name-->
+                <div class="fName">
+                <!--FormName-->
+                <font>Name</font>
+                <!--input-->
+                <input type="text" name="name" placeholder="Full Name" >
+                </div>
+                <!--FormEmail-->
+                <div class="fEmail">
+                    <!--name-->
+                    <font>Email</font>
+                    <!--input-->
+                    <input type="email" name="email" placeholder="Example@gmail.com" >
+                    </div>
+            </div>
+            <!--right-->
+            <div class="contactRight">
+                <!--message-->
+                <div class="message">
+                    <font>Message</font>
+                    <textarea name="msg" rows="5" cols="20" placeholder="Write Message..."></textarea>
+                </div>
+                <!--sumbit-->
+                <button type="submit" name="submit">submit</button>
+            </div>
+        </form>
+    </section>
+<!--EndContactSection-->
+
+
+<!--Footer-->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="logo">
+        Benjamin Testaferri
+      </div>
+      <div class="socialMedia">
+        <a href="https://www.instagram.com/benjatestaferri7/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/benjatestafe" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/benjatestaferri7" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/benjam%C3%ADn-testaferri-gomez-55073a185/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--EndFooter-->
+
+<!--Copyright-->
+<section class="copyright">
+  <div class="container">
+    <p>&copy; 2020, Copyright of all right reserved</p>
+  </div>
+  <p class="text">Designed and Developer by <span><strong><a href="#home">Benjamin Testaferri&reg</a></strong></span></p>
+</section>
 
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
