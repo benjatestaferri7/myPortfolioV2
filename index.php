@@ -15,6 +15,7 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
+  <link rel="shortcut icon" href="img/icon.png">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -32,9 +33,12 @@
         <div class="brandName">
           <a href="" class="logo">Programmer</a>
         </div>
-        <div class="hamBurger">
-          <i class="fa fa-bars"></i>
-        </div>
+        <!--HamburgerSection-->
+        <input class="navigationBar" type="checkbox" id="navToggle">
+        <label for="navToggle">
+          <span class="hamburger"></span>
+        </label>
+        <!--EndHamburgerSection-->
         <div class="navbar">
           <ul>
             <li><a href="#home" class="active">Home</a></li>
@@ -42,8 +46,8 @@
             <li><a href="#services">Services</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#blogs">Blogs</a></li>
-            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contactBTN">Contacts</a></li>
           </ul>
         </div>
       </div>
@@ -71,7 +75,7 @@
   <!--EndHomeSection-->
 
   <!--StartAboutSection-->
-  <section class="aboutMe">
+  <section class="aboutMe" id="about">
     <div class="container">
       <div class="row">
         <div class="sectionTitle">
@@ -88,7 +92,7 @@
             <div class="text">
               <h4>I'm Benjamin Testaferri</h4>
               <h6>A <span>Front-End</span> Web Developer</h6>
-              <p>Hello Everyone the Webdesign is the concept of enchaing the feature & looks of the keyterms of the webpage, and source of the page. UI media, concept of learning is the best thing of web-developer... Using the law of the programming he can easily be a web-designer & web-developer</p>
+              <p>Hello everyone, I introduce myself, I am currently in the second year of the Computer Systems Analyst career in addition to studying I am dedicated to front end web development for 2 years and I love it!</p>
               <div class="info">
                 <div class="list">
                   <label>E-mail:</label>
@@ -162,42 +166,42 @@
               <i class="fa fa-mobile"></i>
             </div>
             <h5>Responsive Website</h5>
-            <p>In computer science, artificial intelligence(AI), sometimes called machine intelligence, is the intelligence demostrated by machines, in contrast to natural intelligence displayed by the humans and animals.</p>
+            <p>I make your site responsive for mobile and tablet.</p>
           </div>
           <div class="box">
             <div class="icons">
               <i class="fa fa-book"></i>
             </div>
             <h5>Tutorials</h5>
-            <p>In computer science, artificial intelligence(AI), sometimes called machine intelligence, is the intelligence demostrated by machines, in contrast to natural intelligence displayed by the humans and animals.</p>
+            <p>If you need to learn something specific I can help you with a short tutorial.</p>
           </div>
           <div class="box">
             <div class="icons">
               <i class="fa fa-award"></i>
             </div>
             <h5>Testing for Perfection</h5>
-            <p>In computer science, artificial intelligence(AI), sometimes called machine intelligence, is the intelligence demostrated by machines, in contrast to natural intelligence displayed by the humans and animals.</p>
+            <p>Projects are tested by inexperienced users in order to get an honest review.</p>
           </div>
           <div class="box">
             <div class="icons">
               <i class="fa fa-lightbulb"></i>
             </div>
             <h5>Creativity</h5>
-            <p>In computer science, artificial intelligence(AI), sometimes called machine intelligence, is the intelligence demostrated by machines, in contrast to natural intelligence displayed by the humans and animals.</p>
+            <p>You have no layout for your page. Do not worry tell me the requirements and I will let my creativity flow to be able to make a good design.</p>
           </div>
           <div class="box">
             <div class="icons">
               <i class="fa fa-code"></i>
             </div>
             <h5>Getting Ready</h5>
-            <p>In computer science, artificial intelligence(AI), sometimes called machine intelligence, is the intelligence demostrated by machines, in contrast to natural intelligence displayed by the humans and animals.</p>
+            <p>The code will be commented by sections in a specific order so that it can be understood by anyone.</p>
           </div>
           <div class="box">
             <div class="icons">
               <i class="fa fa-cog"></i>
             </div>
             <h5>Advanced Features</h5>
-            <p>In computer science, artificial intelligence(AI), sometimes called machine intelligence, is the intelligence demostrated by machines, in contrast to natural intelligence displayed by the humans and animals.</p>
+            <p>If you want to do something that is not within what I offer you can ask me and we will see if I can help you.</p>
           </div>
         </div>
       </div>
@@ -212,7 +216,7 @@
           <div class="row">
             <div class="sectionTitle">
               <h1>Professional Skills</h1>
-              <p>Yes, I learned Webdesign because I love programming and the contents of coding, this is the only thing wich i love every time... Programming is my life.</p>  
+              <p>Yes, I learned web design because I love programming and coding websites.</p>  
             </div>
           </div>
           <div class="row">
@@ -343,7 +347,7 @@
   <div class="container">
     <div class="row">
       <div class="text">
-        <h2>I'am a programmer, who is very much extremaly interested in wich the coding is meant for</h2>
+        <h2>I am a programmer who is very interested in what the project is intended for</h2>
       </div>
       <div class="button">
         <a href="" download=>SUBSCRIBE</a>
@@ -353,7 +357,7 @@
 </section>
 <!--EndMessage-->
 <!--TestimonialSection-->
-<section class="testimonials">
+<section class="testimonials" id="testimonials">
   <div class="container">
     <div class="row">
       <div class="sectionTitle textCenter">
@@ -367,7 +371,7 @@
             <img src="img/testimonials/testimonials1.png" alt="Testimonials Picture">
           </div>
           <div class="text">
-            <p>In computer science, artificial intelligence(AI), sometimes called machine intelligence, is the intelligence demostrated by machines, in contrast to natural intelligence displayed by the humans and animals.</p>
+            <p>Excellent services in ux & ui design. We will surely continue working together. Thank you</p>
             <h5>Jhon Doe</h5>
             <p>Founder</p>
           </div>
@@ -377,8 +381,8 @@
             <img src="img/testimonials/testimonials2.png" alt="Testimonials Picture">
           </div>
           <div class="text">
-            <p>In computer science, artificial intelligence(AI), sometimes called machine intelligence, is the intelligence demostrated by machines, in contrast to natural intelligence displayed by the humans and animals.</p>
-            <h5>Jhon Doe</h5>
+            <p>Excellent responsive design and optimization services. We will keep in touch. Thank you</p>
+            <h5>Susan Rivera</h5>
             <p>Co-Founder</p>
           </div>
         </div>
@@ -387,8 +391,8 @@
             <img src="img/testimonials/testimonials3.png" alt="Testimonials Picture">
           </div>
           <div class="text">
-            <p>In computer science, artificial intelligence(AI), sometimes called machine intelligence, is the intelligence demostrated by machines, in contrast to natural intelligence displayed by the humans and animals.</p>
-            <h5>Jhon Doe</h5>
+            <p>Amazing designs, lots of creativity. We will communicate soon for future work. Thank you</p>
+            <h5>Paul Doe</h5>
             <p>Co-Founder</p>
           </div>
         </div>
