@@ -64,9 +64,6 @@
             <h6>Hello, I'm . . . .</h6>
             <h1>Benjamin Testaferri</h1>
             <h3>A Front-End Web Developer</h3>
-            <div class="cvBtn">
-              <a href="">My Portfolio</a>
-            </div>
           </div>
         </div>
       </div>
