@@ -14,13 +14,3 @@ const containerPos = {};
 containerArray.forEach((section) => {
   containerPos[section.id] = section.offsetTop;
 });
-
-window.onscroll = () => {
-  var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-  for (id in containerPos) {
-    if (containerPos[id] <= scrollPosition) {
-      document.querySelector('.active').classList.remove('active');
-      document.querySelector(`a[href*=${id}]`).classList.add('active');
-    }
-  }
-};
